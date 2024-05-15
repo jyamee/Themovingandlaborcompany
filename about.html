@@ -38,6 +38,12 @@
                     <li class="nav-item">
                         <a class="nav-link active main-color link-light pe-5" href="about.html">About us</a>
                     </li>
+
+                    <li class="nav-item">
+              <a class="nav-link link-light pe-5" href="about.html#quote"
+                >Free quote</a
+              >
+            </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link link-light pe-5">Contact</a>
                     </li>
@@ -60,7 +66,8 @@
                 <div class="d-flex justify-content-center align-items-center" style="min-height: 300px;">
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in" data-aos-duration="1000">
                         <div class="about-text container pt-4">
-                            <p>We are a professional moving company, powered by technology and created to move more than just your property. We'll move you with our hardwork and genuine smiles.</p>
+                            <p>We are a professional moving company, powered by technology and created to move more than just your property. All of our trucks are equipped with dollies, blankets, and all
+                the other materials necessary to make your move safe and smooth.</p>
                             <p>Whether it’s just a few items that need to be moved around, or an entire apartment and house, Our team has a cost-effective option. Our moving services will eliminate the hassle of renting a van and doing the heavy lifting yourself. What makes us unique is that once you arrive at your destination, we will be there to assist in additional chores to alleviate the stress of your move!</p>
                             <p>We also deliver and furniture throughout the globe Our team are fit, friendly and most important of all, they’re trained professionals to handle expensive and delicate items. We offer comprehensive packing services and offer storage units at affordable rates</p>
                         </div>
@@ -108,77 +115,59 @@
             </div>
         </div>
     </section>
+       
+      <section id="quote" class="pb-5" style="background-color:grey;">
+        <form action="index.html" method="post">
+      <h1>Get a Quote</h1>
 
-    <section id="quote-section" class="main-colorbg pt-5 pb-5">
-        <div class="container-xl pt-5 pb-5">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in" data-aos-duration="1000" class=" pt-5 pb-5 d-flex flex-column justify-content-center align-items-center">
-                        <div class="quote-text w-50 text-center text-md-start">
-                            <h2 class="text-white fs-1 fw-bolder">Get Your Free Quote</h2>
-                            <p class="text-white">Fill the form and submit to get a quote.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in" data-aos-duration="1000">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="inputZip" class="form-label text-white">Moving From Zip Code</label>
-                                        <input type="text" class="form-control" id="inputZip">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="control-label text-white" for="date">Moving Date</label>
-                                        <input class="form-control " id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="formGroupExampleInput" class="form-label text-white">First Name</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput">
-                                    </div>
-                                  </form>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="inputZip" class="form-label text-white">Moving To Zip Code</label>
-                                        <input type="text" class="form-control" id="inputZip">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="inputState" class="form-label mb-0 text-white">Number of Rooms</label>
-                                        <select id="inputState" class="form-select">
-                                        <option selected disabled>Choose...</option>
-                                        <option>Studio</option>
-                                        <option>1 Bedroom</option>
-                                        <option>2 Bedroom</option>
-                                        <option>3 Bedroom</option>
-                                        <option>4 Bedroom</option>
-                                        <option>5+ Bedroom</option>
-                                        </select>
-                                    </div>
+      <fieldset>
+        <legend><span class="number">1</span> Your info</legend>
 
-                                    <div class="mb-3">
-                                        <label for="formGroupExampleInput" class="form-label text-white">Last Name</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput">
-                                    </div>
-                                  </form>
-                            </div>
-                        </div>
-                    </div>
-                    <form>
-                        <div data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in" data-aos-duration="1000">
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1">
-                            </div>
-                            <button type="submit" class="btn btn-dark w-100 pt-2 pb-2">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+
+        <label for="location">Address:</label>
+        <input type="text" id="name" name="user_name" />
+
+        <label for="mail">Email:</label>
+        <input type="text" id="age" min="1" max="200" name="user_age" />
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span> Move details</legend>
+
+        <label for="name">Destination:</label>
+        <input type="text" id="destination" name="user_destination" />
+
+        <label for="name">Moving Date:</label>
+        <input type="date" id="departure_date" name="user_departure_date" />
+
+        <label for="name">Services needed:</label>
+        <input type="text" id="destination" name="user_destination" />
+
+        <label for="name">List items needed to be moved:</label>
+        <input type="text" id="destination" name="user_destination" />
+      </fieldset>
+      <button type="submit">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-calculator"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+          />
+          <path
+            d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"
+          />
+        </svg>
+        Submit
+      </button>
+    </form>
+   </section>
 
     <footer>
         <section id="footer-container" class="bg-dark">
